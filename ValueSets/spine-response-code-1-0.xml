@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ 	<meta>
+		<lastUpdated value="2016-09-20"/>
+	</meta>
+  <url value="http://fhir.nhs.net/ValueSet/spine-response-code-1-0"/>
+  <name value="Spine-Response-Code-2-0"/>
+  <status value="active"/>
+<description value="A set of codes to indicate low level error information about a Spine 2 error response to a request for patient record details."/>
+    <codeSystem>
+    <system value="http://fhir.nhs.net/ValueSet/spine-response-code-1-0"/>
+     <concept>
+       <code value="FGM-0001"/>
+        <display value="No FGM Record Found"/>
+      </concept>
+      <concept>
+        <code value="FGM-0002"/>
+        <display value="NHS Number Invalid"/>
+      </concept>
+	  <concept>
+        <code value="FGM-9999"/>
+        <display value="Message not well formed"/>
+      </concept>
+    </codeSystem>
+</ValueSet>

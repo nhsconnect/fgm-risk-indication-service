@@ -1,0 +1,51 @@
+entries:
+- title: FGM Service
+  product: FGM Service<br/>
+  version: 2.0-draftb
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+    - title: Capabilities
+      url: /overview_priority_capabilities.html
+      output: web
+    - title: Glossary
+      url: /overview_glossary.html
+      output: web
+  - title: Development Guidance
+    output: web
+    folderitems:
+    - title: Development Assets
+      url: /development_deliverables.html
+      output: web
+    - title: Messaging Architecture
+      url: /development_messaging_architecture.html
+      output: web 
+    - title: FGM Query v1
+      url: /development_fgm_query_v1.html
+      output: web 
+    - title: FGM Query v2
+      url: /development_fgm_query_v2.html
+      output: web 
+    - title: FGM Create Flag
+      url: /development_fgm_create.html
+      output: web 
+    - title: FGM Delete Flag
+      url: /development_fgm_delete.html
+      output: web 
+      subfolders:
+  - title: Tags
+    output: web
+    folderitems:
+    - title: Getting Started
+      url: /tag_getting_started.html
+      output: web
+    - title: Development
+      url: /tag_development.html
+      output: web

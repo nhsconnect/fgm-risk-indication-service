@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ 	<meta>
+		<lastUpdated value="2016-09-20"/>
+	</meta>
+  <url value="http://fhir.nhs.net/ValueSet/message-event-1-0"/>
+  <name value="FGM Message Event"/>
+  <status value="active"/>
+<description value="A set of HSCIC FHIR Message Event Codes."/>
+    <codeSystem>
+    <system value="http://fhir.nhs.net/ValueSet/message-event-1-0"/>
+     <concept>
+       <code value="urn:nhs:names:services:clinicals-sync:FGMQuery_1_0"/>
+        <display value="FGM Query"/>
+      </concept>
+      <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMQueryResponse_1_0"/>
+        <display value="FGM Query Response"/>
+      </concept>
+    </codeSystem>
+</ValueSet>
