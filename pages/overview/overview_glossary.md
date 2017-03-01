@@ -10,47 +10,66 @@ toc: false
 
 Glossary of common terms and abbreviations used though-out the FGM Service documentation.
 
-Direct Patient Care
-: {{site.data.glossary.direct_patient_care}}
-
-First of Type
-: {{site.data.glossary.first_of_type}}
-
-Consumer
-: {{site.data.glossary.consumer}}
-
-Provider
-: {{site.data.glossary.provider}}
-
-Principal Supplier
-: {{site.data.glossary.principal_supplier}}
-
 Accreditation
 : {{site.data.glossary.accreditation}}
 
 Assurance
 : {{site.data.glossary.assurance}}
 
-GPSoC Contract
-: {{site.data.glossary.gpsoc_contract}}
+Consumer
+: {{site.data.glossary.consumer}}
 
-GP Connect Licence
-: {{site.data.glossary.gpconnect_licence}}
+Core Service 
+: {{site.data.glossary.core_service}}
 
-Proxy Server
-: {{site.data.glossary.proxy_server}}
+First of Type
+: {{site.data.glossary.first_of_type}}
 
-Spine
-: {{site.data.glossary.spine}}
+FGM
+: {{site.data.glossary.fgm}}
 
-PDS
-: {{site.data.glossary.pds}}
+FGM RIS
+: {{site.data.glossary.fgm_ris}}
 
-SDS
-: {{site.data.glossary.sds}}
+FHIR
+: {{site.data.glossary.fhir}}
 
 ODS
 : {{site.data.glossary.ods}}
 
-FGM
-: {{site.data.glossary.fgm}}
+PDS
+: {{site.data.glossary.pds}}
+
+Principal Supplier
+: {{site.data.glossary.principal_supplier}}
+
+Provider
+: {{site.data.glossary.provider}}
+
+Proxy Server
+: {{site.data.glossary.proxy_server}}
+
+RBAC
+: {{site.data.glossary.rbac}}
+
+SCRa
+: {{site.data.glossary.scra}}
+
+SDS
+: {{site.data.glossary.sds}}
+
+SMSP
+: {{site.data.glossary.smsp}}
+
+Spine
+: {{site.data.glossary.spine}}
+
+URL
+: {{site.data.glossary.url}}
+
+Validated NHS number
+: {{site.data.glossary.validated_nhs_number}}
+
+Verified NHS number
+: {{site.data.glossary.verified_nhs_number}}
+
