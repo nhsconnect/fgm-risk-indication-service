@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ 	<meta>
+		<lastUpdated value="2016-09-20"/>
+	</meta>
+  <url value="http://fhir.nhs.net/ValueSet/message-event-2-0"/>
+  <name value="FGM Message Event"/>
+  <status value="active"/>
+<description value="A set of HSCIC FHIR Message Event Codes."/>
+    <codeSystem>
+    <system value="http://fhir.nhs.net/ValueSet/message-event-2-0"/>
+     <concept>
+       <code value="urn:nhs:names:services:clinicals-sync:FGMQuery_2_0"/>
+        <display value="FGM Query"/>
+      </concept>
+      <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMQueryResponse_2_0"/>
+        <display value="FGM Query Response"/>
+      </concept>
+	  <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMCreate_1_0"/>
+        <display value="FGM Create"/>
+      </concept>
+	  <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMCreateResponse_1_0"/>
+        <display value="FGM Create Response"/>
+      </concept>
+	  <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMDelete_1_0"/>
+        <display value="FGM Delete"/>
+      </concept>
+	  <concept>
+        <code value="urn:nhs:names:services:clinicals-sync:FGMDeleteResponse_1_0"/>
+        <display value="FGM Delete Response"/>
+      </concept>
+    </codeSystem>
+</ValueSet>

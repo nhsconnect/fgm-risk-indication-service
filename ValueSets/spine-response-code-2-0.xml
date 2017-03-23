@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ 	<meta>
+		<lastUpdated value="2016-09-20"/>
+	</meta>
+  <url value="http://fhir.nhs.net/ValueSet/spine-response-code-2-0"/>
+  <name value="Spine-Response-Code-2-0"/>
+  <status value="active"/>
+<description value="A set of codes to indicate low level error information about a Spine 2 /SMSP error response to a request for patient record details."/>
+    <codeSystem>
+    <system value="http://fhir.nhs.net/ValueSet/spine-response-code-2-0"/>
+      <concept>
+        <code value="PATIENT_OVER_18"/>
+        <display value="Patient is over 18"/>
+      </concept>
+    </codeSystem>
+      <compose>
+      <include>
+      <system value="http://fhir.nhs.net/ValueSet/spine-error-or-warning-code-1"/>
+      <concept>
+			<code value="NO_RECORD_FOUND"/>
+			<display value="No record found"/>
+		</concept>
+		<concept>
+			<code value="INVALID_NHS_NUMBER"/>
+			<display value="Invalid NHS number"/>
+		</concept>
+		<concept>
+			<code value="INVALID_PARAMETER"/>
+			<display value="Invalid parameter"/>
+		</concept>
+		<concept>
+			<code value="MESSAGE_NOT_WELL_FORMED"/>
+			<display value="Message not well formed"/>
+		</concept>
+		<concept>
+			<code value="FLAG_ALREADY_SET"/>
+			<display value="Flag value was already set"/>
+		</concept>
+		<concept>
+			<code value="ASID_CHECK_FAILED"/>
+			<display value="The sender or receiver's ASID is not authorised for this interaction"/>
+		</concept>
+      </include>
+       <include>
+      <system value="http://fhir.nhs.net/ValueSet/smsp-error-or-warning-code-1"/>
+      <concept>
+			<code value="INPUT_MESSAGE_VALIDATION_ERROR"/>
+			<display value="Input message validation error"/>
+		</concept>
+		<concept>
+			<code value="RESPONSE_MESSAGE_VALIDATION_ERROR"/>
+			<display value="Response message validation error"/>
+		</concept>
+		<concept>
+			<code value="DATA_RETURNED_FROM_LOCAL_STORE_SPINE_UNAVAILABLE"/>
+			<display value="Data returned from local store, Spine unavailable"/>
+		</concept>
+		<concept>
+			<code value="COULD_NOT_CONNECT_TO_SPINE"/>
+			<display value="Could not connect to Spine"/>
+		</concept>
+		<concept>
+			<code value="AUTHOR_CREDENTIALS_ERROR"/>
+			<display value="Author credentials error"/>
+		</concept>
+		<concept>
+			<code value="GENERIC_SPINE_MINI_SERVICE_PROVIDER_SOFTWARE_FAILURE"/>
+			<display value="Generic Spine Mini Service Provider software failure"/>
+		</concept>
+      </include>
+      </compose>
+</ValueSet>

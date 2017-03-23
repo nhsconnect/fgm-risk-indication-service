@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2016-04-21T16:21:33.03+01:00" />
+    <tag>
+      <system value="urn:hscic:publishOrder" />
+      <code value="03" />
+    </tag>
+    <tag>
+      <system value="urn:hscic:examples" />
+      <code value="Example-dr-3" />
+      <display value="Spine-FGMDelete-Parameters-1-0 Example" />
+    </tag>
+  </meta>
+  <url value="http://fhir.nhs.net/StructureDefinition/spine-fgmdelete-parameters-1-0" />
+  <version value="0.0.1" />
+  <name value="Spine-FGMDelete-Parameters-1-0" />
+  <display value="Spine-FGMDelete-Parameters-1-0" />
+  <status value="draft" />
+  <publisher value="http://fhir.nhs.net" />
+  <date value="2015-04-02T14:21:09+02:00" />
+  <description value="This Parameters Resource is constrained for FGM Delete Request messaging requirements. " />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM" />
+  </mapping>
+  <kind value="resource" />
+  <constrainedType value="Parameters" />
+  <abstract value="false" />
+  <base value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+  <snapshot>
+    <element>
+      <path value="Parameters" />
+      <short value="Delete Request Parameters Request" />
+      <definition value="This special resource type is used to represent [operation](operations.html] request and response. It has no other use, and there is no RESTful end=point associated with it." />
+      <comments value="The parameters that may be used are defined by the OperationDefinition resource." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="parameter" />
+      <slicing>
+        <discriminator value="name" />
+        <ordered value="true" />
+        <rules value="closed" />
+      </slicing>
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <short value="Name from the definition" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element>
+      <path value="Parameters.parameter.value[x]" />
+      <short value="If parameter is a data type" />
+      <definition value="If the parameter is a data type." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="base64Binary" />
+      </type>
+      <type>
+        <code value="instant" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="oid" />
+      </type>
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="unsignedInt" />
+      </type>
+      <type>
+        <code value="positiveInt" />
+      </type>
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="Annotation" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Coding" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="SampledData" />
+      </type>
+      <type>
+        <code value="Signature" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <type>
+        <code value="Address" />
+      </type>
+      <type>
+        <code value="ContactPoint" />
+      </type>
+      <type>
+        <code value="Timing" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="Meta" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="Risk Indicator" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="Risk Indicator" />
+      <short value="RiskIndicator" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="RiskIndicator" />
+      <exampleString value="RiskIndicator" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.valueString" />
+      <label value="Risk Indicator" />
+      <code>
+        <system value="http://fhir.nhs.net/ValueSet/risk-indicator-type-1-0" />
+        <code value="FGM" />
+      </code>
+      <short value="Risk Indicator code fixed to 'FGM'." />
+      <definition value="coding" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="NHS Number" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="NHS Number" />
+      <short value="NHSNumber" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="NHSNumber" />
+      <exampleString value="NHSNumber" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.valueString" />
+      <code>
+        <system value="http://fhir.nhs.net/Id/nhs-number" />
+      </code>
+      <short value="Verified NHS number of the patient " />
+      <definition value="identifier" />
+      <comments value="the NHS number must be a valid verified nhs number. " />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="FGMDeleteReason" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.modifierExtension" />
+      <short value="Extensions that cannot be ignored" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <alias value="modifiers" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="BackboneElement.modifierExtension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <isModifier value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="FGMDeleteReason" />
+      <short value="Name from the definition" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="FGMDeleteReason" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.value[x]" />
+      <short value="If parameter is a data type" />
+      <definition value="If the parameter is a data type." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <condition value="inv-1" />
+      <binding>
+        <strength value="required" />
+        <description value="fgm-delete-reason-codes-1-0" />
+        <valueSetUri value="http://fhir.nhs.net/ValueSet/fgm-delete-reason-codes-1-0" />
+      </binding>
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+  </snapshot>
+  <differential>
+    <element>
+      <path value="Parameters" />
+      <short value="Delete Request Parameters Request" />
+      <definition value="This special resource type is used to represent [operation](operations.html] request and response. It has no other use, and there is no RESTful end=point associated with it." />
+      <comments value="The parameters that may be used are defined by the OperationDefinition resource." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <mapping>
+        <identity value="v2" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="parameter" />
+      <slicing>
+        <discriminator value="name" />
+        <ordered value="true" />
+        <rules value="closed" />
+      </slicing>
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="Risk Indicator" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="Risk Indicator" />
+      <short value="RiskIndicator" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="RiskIndicator" />
+      <exampleString value="RiskIndicator" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.valueString" />
+      <label value="Risk Indicator" />
+      <code>
+        <system value="http://fhir.nhs.net/ValueSet/risk-indicator-type-1-0" />
+        <code value="FGM" />
+      </code>
+      <short value="Risk Indicator code fixed to 'FGM'." />
+      <definition value="coding" />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="NHS Number" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="NHS Number" />
+      <short value="NHSNumber" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="NHSNumber" />
+      <exampleString value="NHSNumber" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.valueString" />
+      <code>
+        <system value="http://fhir.nhs.net/Id/nhs-number" />
+      </code>
+      <short value="Verified NHS number of the patient " />
+      <definition value="identifier" />
+      <comments value="the NHS number must be a valid verified nhs number. " />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter" />
+      <name value="FGMDeleteReason" />
+      <short value="Operation Parameter" />
+      <definition value="A parameter passed to or received from the operation." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <constraint>
+        <key value="inv-1" />
+        <severity value="error" />
+        <human value="A parameter must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+    <element>
+      <path value="Parameters.parameter.name" />
+      <name value="FGMDeleteReason" />
+      <short value="Name from the definition" />
+      <definition value="The name of the parameter (reference to the operation definition)." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.name" />
+        <min value="1" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <fixedString value="FGMDeleteReason" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.value[x]" />
+      <short value="If parameter is a data type" />
+      <definition value="If the parameter is a data type." />
+      <min value="1" />
+      <max value="1" />
+      <base>
+        <path value="Parameters.parameter.value[x]" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <condition value="inv-1" />
+      <binding>
+        <strength value="required" />
+        <description value="fgm-delete-reason-codes-1-0" />
+        <valueSetUri value="http://fhir.nhs.net/ValueSet/fgm-delete-reason-codes-1-0" />
+      </binding>
+    </element>
+    <element>
+      <path value="Parameters.parameter.resource" />
+      <short value="If parameter is a whole resource" />
+      <definition value="If the parameter is a whole resource." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.resource" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="Resource" />
+      </type>
+      <condition value="inv-1" />
+    </element>
+    <element>
+      <path value="Parameters.parameter.part" />
+      <short value="Named part of a parameter (e.g. Tuple)" />
+      <definition value="A named part of a parameter. In many implementation context, a set of named parts is known as a &quot;Tuple&quot;." />
+      <comments value="Only one level of Tuples is allowed." />
+      <min value="0" />
+      <max value="0" />
+      <base>
+        <path value="Parameters.parameter.part" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <nameReference value="parameter" />
+      <constraint>
+        <key value="inv-2" />
+        <severity value="error" />
+        <human value="A part must have a value or a resource, but not both" />
+        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
+      </constraint>
+    </element>
+  </differential>
+</StructureDefinition>

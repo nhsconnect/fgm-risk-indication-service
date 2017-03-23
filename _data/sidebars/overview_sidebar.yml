@@ -1,7 +1,7 @@
 entries:
 - title: FGM Service
   product: FGM Service<br/>
-  version: 2.0-draftb
+  version: 2.0-draftd
   levels: one
   folders:
 
@@ -39,7 +39,18 @@ entries:
     - title: FGM Delete Flag
       url: /development_fgm_delete.html
       output: web 
-      subfolders:
+  - title: Spine Integration
+    output: web
+    folderitems:
+    - title: Personal Demographic Service
+      url: /integration_personal_demographic_service.html
+      output: web
+    - title: Spine Directory Service
+      url: /integration_spine_directory_service.html
+      output: web 
+    - title: Spine Mini Service
+      url: /integration_spine_mini_service.html
+      output: web 
   - title: Tags
     output: web
     folderitems:
@@ -48,4 +59,7 @@ entries:
       output: web
     - title: Development
       url: /tag_development.html
+      output: web
+    - title: Integration
+      url: /tag_integration.html
       output: web
