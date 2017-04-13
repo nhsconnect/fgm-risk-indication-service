@@ -24,7 +24,7 @@ entries:
     - title: Development Assets
       url: /development_deliverables.html
       output: web
-    - title: Messaging Architecture
+    - title: FHIR Messaging Architecture
       url: /development_messaging_architecture.html
       output: web 
     - title: FGM Query v1

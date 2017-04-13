@@ -18,7 +18,7 @@ The FGM Service supports the following functionality:
 - Delete patient FGM flag
 
 
-The FGM Service is based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation](http://hl7.org/fhir/messaging.html) (Sept 2015) Messaging Implementation. 
+The FGM Service is based on the [HL7 FHIR DSTU2 1.0.1 Messaging Implementation](http://hl7.org/fhir/DSTU2/messaging.html) (Sept 2015) Messaging Implementation. 
 
 
 
@@ -52,6 +52,42 @@ Implementation guidance for the FGM Create and Delete 'update' Spine 2 interface
 [FGM_implementation_guide-v1]: images/fgm/FGM_implementation_guide-v1.pdf
 
 
+## QRY-FGM-QueryRequest-1-0 Interaction ## 
+
+The client system will construct an FGM Query Request message and send it to Spine 2.
+
+- *Sender:* FGM Client
+- *Receiver:* Spine 2
+- *Message: Wire Format:* [FGM-QueryRequest-1-0]
+
+**Acknowledgements**
+
+HTTP Response
+
+**Responses**
+
+Spine 2 **must** send the following response:
+
+*FGM Query Response* - [RSP-FGM-QueryRequestResponse-1-0](#RSP-FGM-QueryRequestResponse-1-0)
+
+
+## RSP-FGM-QueryRequestResponse-1-0 Interaction
+
+<!--<a name="RSP-FGM-QueryRequestResponse-2-0"></a> **RSP-FGM-QueryRequestResponse-2-0 Interaction** -->
+
+Assuming successful transport of the FGM-QueryRequest-2-0 message, Spine 2 will construct an FGM Query Response message and send it to the FGM Client.
+
+- *Sender:* Spine 2 
+- *Receiver:* FGM Client
+- *Message: Wire Format:* [FGM-QueryRequestResponse-1-0]
+
+There are three possible outcomes to the Query Request:
+
+- **Invalid Query:** SPINE rejects the FGM query due to business rules around the query construct.
+- **FGM Entry Found:** SPINE executes the FGM query and there is an FGM risk entry for the patient.
+- **No FGM Entry Found:** SPINE executes the FGM query and there is no FGM risk entry for the patient.
+
+
 ## QRY-FGM-QueryRequest-2-0 Interaction ## 
 
 The client system will construct an FGM Query Request message and send it to Spine 2.
@@ -60,18 +96,18 @@ The client system will construct an FGM Query Request message and send it to Spi
 - *Receiver:* Spine 2
 - *Message: Wire Format:* [FGM-QueryRequest-2-0]
 
-** Acknowledgements **
+**Acknowledgements**
 
-HTTP Response.
+HTTP Response
 
-** Responses **
+**Responses**
 
 Spine 2 **must** send the following response:
 
 *FGM Query Response* - [RSP-FGM-QueryRequestResponse-2-0](#RSP-FGM-QueryRequestResponse-2-0)
 
-----------
 
+<!--
 ## QRY-FGM-QueryRequest-2-0 Interaction ## 
 
 The client system will construct an FGM Query Request message and send it to Spine 2.
@@ -81,9 +117,11 @@ The client system will construct an FGM Query Request message and send it to Spi
 | QRY-FGM-QueryRequest-2-0 | [FGM Client]| [Spine 2] | [FGM-QueryRequest-2-0] | [HTTP Response] | [RSP-FGM-QueryRequestResponse-2-0](#RSP-FGM-QueryRequestResponse-2-0) OR |
 | | | | |
 
-----------
+-->
 
-**<a name="RSP-FGM-QueryRequestResponse-2-0"></a> RSP-FGM-QueryRequestResponse-2-0 Interaction** 
+## RSP-FGM-QueryRequestResponse-2-0 Interaction
+
+<!--<a name="RSP-FGM-QueryRequestResponse-2-0"></a> **RSP-FGM-QueryRequestResponse-2-0 Interaction** -->
 
 Assuming successful transport of the FGM-QueryRequest-2-0 message, Spine 2 will construct an FGM Query Response message and send it to the FGM Client.
 
@@ -109,7 +147,7 @@ The client system will construct an FGM Create Flag message and send it to Spine
 
 **Acknowledgements**
 
-HTTP Response.
+HTTP Response
 
 **Responses**
 
@@ -117,9 +155,10 @@ Spine 2 **must** send the following response:
 
 *FGM CreateFlag Response* - [RSP-FGM-CreateFlagRequestResponse-1-0](#RSP-FGM-CreateFlagRequestResponse-1-0)
 
-----------
 
-**<a name="RSP-FGM-CreateFlagRequestResponse-1-0"></a> RSP-FGM-CreateFlagRequestResponse-1-0 Interaction** 
+
+## RSP-FGM-CreateFlagRequestResponse-1-0 Interaction
+<!-- **<a name="RSP-FGM-CreateFlagRequestResponse-1-0"></a> RSP-FGM-CreateFlagRequestResponse-1-0 Interaction** -->
 
 Assuming successful transport of the FGM-CreateFlagRequest-1-0 message, Spine 2 will construct an FGM Create Flag Response message and send it to the FGM Client.
 
@@ -132,7 +171,7 @@ There are two possible outcomes to the FGM-CreateFlagRequest-1-0:
 - **FGM Create:** SPINE executes the FGM create flag request and an FGM risk entry for the patient is created on Spine 2.
 - **Invalid Create Request:** SPINE rejects the FGM create flag request due to business rules around the create flag construct.
 
-----------
+
 
 ## NOT-FGM-DeleteRequest-1-0 Interaction ## 
 
@@ -144,7 +183,7 @@ The client system will construct an FGM Delete message and send it to Spine 2.
 
 **Acknowledgements**
 
-HTTP Response.
+HTTP Response
 
 **Responses**
 
@@ -152,9 +191,11 @@ Spine 2 **must** send the following response:
 
 *FGM Delete Response* - [RSP-FGM-DeleteRequestResponse-1-0](#RSP-FGM-DeleteRequestResponse-1-0)
 
-----------
 
-**<a name="RSP-FGM-DeleteRequestResponse-1-0"></a> RSP-FGM-DeleteRequestResponse-1-0 Interaction** 
+
+## RSP-FGM-DeleteRequestResponse-1-0 Interaction
+
+<!-- **<a name="RSP-FGM-DeleteRequestResponse-1-0"></a> RSP-FGM-DeleteRequestResponse-1-0 Interaction** -->
 
 Assuming successful transport of the FGM-CreateFlagRequest-1-0 message, Spine 2 will construct an FGM Delete Response message and send it to the FGM Client.
 
@@ -167,7 +208,7 @@ There are two possible outcomes to the FGM-DeleteRequest-1-0:
 - **FGM Delete:** SPINE executes the FGM delete request and the FGM risk entry for the patient is removed from Spine 2.
 - **Invalid Delete Request:** SPINE rejects the FGM delete request due to business rules around the delete message construct.
 
-----------
+
 
 
 
@@ -187,6 +228,6 @@ The diagram shows the FGM Risk Indication System Spine 2 Interactions:
 
 ## Further Information ##
   
-For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.1 Messaging Implementation](http://hl7.org/fhir/messaging.html) and for the 'FGM Service' read only interface see: [FGM_implementation_guide-v1](images/fgm/FGM_implementation_guide-v1.pdf).
+For more information about FHIR messaging please visit: [HL7 FHIR DSTU2 1.0.1 Messaging Implementation](http://hl7.org/fhir/DSTU2/messaging.html) and for the 'FGM Service' read only interface see: [FGM_implementation_guide-v1](images/fgm/FGM_implementation_guide-v1.pdf).
 
-Quick links to FHIR reference implementations and implementation tool downloads are available from the [FHIR DSTU2 1.0.1](http://hl7.org/fhir/index.html)(Sept 2015) specification.
+Quick links to FHIR reference implementations and implementation tool downloads are available from the [FHIR DSTU2 1.0.1](http://hl7.org/fhir/DSTU2/Index.html)(Sept 2015) specification.
