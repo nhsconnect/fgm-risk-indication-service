@@ -13,13 +13,14 @@ summary: A brief introduction to getting started with the FGM Service FHIR&reg; 
 
 # Background to FGM Risk Indication System #
 
-Female Genital Mutilation (FGM) is illegal and is child abuse. The Government is committed to preventing and ending this harmful practice which violates the rights of girls and women.
+Female Genital Mutilation (FGM) is an illegal, extremely harmful practice and a form of child abuse and violence against women and girls. The Government is committed to preventing and ending this harmful practice which violates the rights of girls and women. 
 
-The Department of Health (DH) in partnership with NHS England has launched a FGM Prevention Programme  which aims to improve the NHS’ response to FGM, increase levels of safeguarding for girls at risk of FGM and provide better subsequent support and care for those that have undergone FGM. It is the intention to eradicate FGM in this country within a lifetime.
+The Department of Health (DH) in partnership with NHS England has launched a FGM Prevention Programme which aims to improve the NHS’ response to FGM, increase levels of safeguarding for girls at risk of FGM and provide better subsequent support and care for those that have undergone FGM. 
 
-As part of the FGM Prevention Programme, the DH has commissioned NHS Digital to develop a national FGM Risk Indication System (FGM RIS). The FGM RIS is a new national IT service and an important development to support effective early intervention and ongoing safeguarding of girls potentially at risk of FGM. The FGM RIS is one element of the wider FGM Prevention Programme. 
 
-The system will be delivered in two stages:
+As part of the FGM Prevention Programme, a national FGM Risk Indication System (FGM RIS) has been developed. This is a national IT service and forms part of the national Spine architecture. It allows FGM risk information for girls under 18 to be stored and shared with relevant NHS healthcare professionals across departmental, organisational and geographical boundaries within England, supporting effective early intervention and ongoing safeguarding of girls potentially at risk of FGM. 
+
+The system was delivered in two stages:
 
 **Stage 1: Delivery of the ‘Core Service’ -** the FGM RIS forms part of the national Spine architecture. From August 2015, the Summary Care Record application (SCRa) will include new functionality to allow authorised healthcare professionals to record, remove and view potential risk of FGM for girls under the age of 18.   
 
@@ -34,9 +35,7 @@ In addition, to update existing reporting capability to include transactions for
 **Stage 2: Delivery of ‘Integration Capabilities’ -** to make information held within the Core Service more widely available to healthcare staff by allowing integration of:
 
  - A ‘view only’ capability within local NHS systems and Spine Mini Service Providers (SMSP). This will allow fully integrated query and response access to national FGM risk information from local NHS systems and SMSP's. 
- - An ‘update’ capability within local NHS systems. Enabling additional create and delete capability for local NHS systems integration to the FGM RIS. 
-
-
+ - An ‘update’ capability within local NHS systems. Enabling additional create and delete capability for local NHS systems integration to the FGM RIS. This functionality is only applicable to local NHS IT systems that are Spine compliant and use National Role Based Access Control (RBAC). The FGM RIS can only be updated by authorised healthcare professionals using Smartcards with the correct RBAC activity codes. 
 
 
 {% include important.html content="This Implementation Guide is only concerned with FGM RIS **Stage 2: Delivery of ‘Integration Capabilities’**." %}
