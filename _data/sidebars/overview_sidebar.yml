@@ -18,15 +18,27 @@ entries:
     - title: Glossary
       url: /overview_glossary.html
       output: web
+
   - title: Development Guidance
     output: web
     folderitems:
     - title: Development Assets
       url: /development_deliverables.html
       output: web
-    - title: FHIR Messaging Architecture
+    - title: FHIR&reg; Messaging Architecture
       url: /development_messaging_architecture.html
       output: web 
+
+      subfolders:
+      - title: FHIR&reg; API Guidance
+        output: web 
+        subfolderitems:
+
+        - title: FHIR&reg; DSTU2 1.0.2
+          url: /development_dstu2.html
+          output: web
+
+
     - title: FGM Query v1
       url: /development_fgm_query_v1.html
       output: web 
@@ -39,6 +51,7 @@ entries:
     - title: FGM Delete Flag
       url: /development_fgm_delete.html
       output: web 
+
   - title: Spine Integration
     output: web
     folderitems:

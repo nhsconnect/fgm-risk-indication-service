@@ -114,7 +114,7 @@ Connection: close
 ```
 OR the Query Response Message:
 
-- SHALL return a `404` **Not Found** HTTP status code on successful execution of the interaction, however no FGM flag record has been found.
+- SHALL return a `500` **Internal Server Error** HTTP status code on successful execution of the interaction, however no FGM flag record has been found.
 - SHALL return a `Bundle` of `type` message that conforms to the `spine-message-bundle-1-0` profile;
 - SHALL return a MessageHeader resource that conforms to the `spine-Response-messageheader-1-0` profile, containing:
   - The `OperationOutcome` resource which MUST conform to the `spine-operationoutcome-1-0` profile; 
@@ -123,7 +123,7 @@ OR the Query Response Message:
 Spine 2 will return:
 
 ```xml
-HTTP/1.1 404 Not Found
+HTTP/1.1 500 Internal Server Error
 Server: nginx/1.10.1
 Date: Fri, 06 Jan 2017 09:17:00 GMT
 Content-Type: application/xml+fhir;charset=utf-8
