@@ -4,7 +4,7 @@
 		<lastUpdated value="2016-09-20"/>
 	</meta>
   <url value="http://fhir.nhs.net/ValueSet/message-event-1-0"/>
-  <name value="FGM Message Event"/>
+  <name value="Message-Event-1-0"/>
   <status value="active"/>
 <description value="A set of HSCIC FHIR Message Event Codes."/>
     <codeSystem>
