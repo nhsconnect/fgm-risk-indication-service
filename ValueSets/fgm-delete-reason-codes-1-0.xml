@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+ 	<meta>
+		<lastUpdated value="2016-09-20"/>
+	</meta>
+  <url value="http://fhir.nhs.net/ValueSet/fgm-delete-reason-codes-1-0"/>
+  <name value="FGM Message Event"/>
+  <status value="active"/>
+<description value="A set of HSCIC FHIR Delete Reason Codes."/>
+    <codeSystem>
+    <system value="http://fhir.nhs.net/ValueSet/fgm-delete-reason-codes-1-0"/>
+     <concept>
+       <code value="0"/>
+        <display value="The at-risk indicator was added inadvertently or incorrectly"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="The patient is no longer considered to be potentially at risk of FGM"/>
+      </concept>
+	  <concept>
+        <code value="2"/>
+        <display value="The patient has had FGM"/>
+      </concept>
+    </codeSystem>
+</ValueSet>
