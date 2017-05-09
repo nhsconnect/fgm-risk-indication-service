@@ -4,7 +4,7 @@
 		<lastUpdated value="2017-02-15"/>
 	</meta>
   <url value="http://fhir.nhs.net/ValueSet/smsp-error-or-warning-code-1"/>
-  <name value="SMSP error or warning code 1"/>
+  <name value="SMSP-Error-or-warning-code-1"/>
   <status value="active"/>
 <description value="A set of codes to indicate smsp error or warning-code."/>
     <codeSystem>
