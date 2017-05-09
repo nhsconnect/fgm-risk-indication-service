@@ -94,7 +94,7 @@ FGM RIS Delete Request:
 | :--------- | :-----: |:-----: |:-----: |
 | [Spine-Message-Bundle-1-0](../../StructureDefinitions/Spine-Message-Bundle-1-0.xml) | [Bundle](http://data.developer.nhs.uk/fhir/fgm/examples/Profile.FGMRISQueryRequest/Example-qr-1a.xml) | [valueset-bundle-type](http://hl7.org/fhir/DSTU2/valueset-bundle-type.html) | [Development Example Code - Coming Soon] |
 | [Spine-Request-MessageHeader-2-0](https://fhir-test.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) | [MessageHeader](http://data.developer.nhs.uk/fhir/fgm/Profile.FGMRISQueryRequest/Examples.html#Spine-Request-MessageHeader-1-0) | [message-event-2-0.](https://fhir-test.nhs.uk/ValueSet/message-event-2-0) | TBA |
-| [Spine-FGMDelete-Parameters-1-0](https://fhir-test.nhs.uk/StructureDefinition/spine-fgmdelete-parameters-1-0) |TBA | [fgm-delete-reason-codes-1-0](https://fhir-test.nhs.uk/ValueSet/fgm-delete-reason-codes-1-0.xml)| TBA |
+| [Spine-FGMDelete-Parameters-1-0](https://fhir-test.nhs.uk/StructureDefinition/spine-fgmdelete-parameters-1-0) |TBA | [fgm-delete-reason-codes-1-0](https://fhir-test.nhs.uk/ValueSet/fgm-delete-reason-codes-1-0)| TBA |
 | [Spine-Practitioner-1-0](../../StructureDefinitions/spine-practitioner-1-0.xml) |TBA | | TBA |
 | [Spine-Organization-1-0](../../StructureDefinitions/spine-organization-1-0.xml) | TBA| | TBA |
 
