@@ -4,6 +4,7 @@
 		<lastUpdated value="2016-09-20"/>
 	</meta>
   <url value="http://fhir.nhs.net/ValueSet/message-event-2-0"/>
+   <version value="2.0.0"/>
   <name value="Message-Event-2-0"/>
   <status value="active"/>
 <description value="A set of HSCIC FHIR Message Event Codes."/>

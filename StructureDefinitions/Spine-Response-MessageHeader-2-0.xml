@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2016-04-22T10:56:59.105+01:00" />
@@ -13,7 +13,7 @@
     </tag>
   </meta>
   <url value="http://fhir.nhs.net/StructureDefinition/spine-response-messageheader-2-0" />
-  <version value="0.0.1" />
+  <version value="2.0.0"/>
   <name value="Spine-Response-MessageHeader-2-0" />
   <display value="Spine-Response-MessageHeader-2-0" />
   <status value="draft" />

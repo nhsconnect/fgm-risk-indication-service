@@ -4,6 +4,7 @@
 		<lastUpdated value="2016-09-20"/>
 	</meta>
   <url value="http://fhir.nhs.net/ValueSet/risk-indicator-type-1-0"/>
+   <version value="1.0.0"/>
   <name value="Risk-Indicator-Type-1-0"/>
   <status value="active"/>
 <description value="An indicator to identify risks within the Risk Indication System."/>
