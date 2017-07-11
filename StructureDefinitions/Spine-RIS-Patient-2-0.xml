@@ -16,10 +16,19 @@
   <version value="2.0.0"/>
   <name value="Spine-RIS-Patient-2-0" />
   <display value="Spine-RIS-Patient-2-0" />
-  <status value="draft" />
-  <publisher value="http://fhir.nhs.net" />
+ <status value="active" />
+  <publisher value="NHS Digital"/>
+	<contact>
+		<name value="Interoperability Team"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
   <date value="2015-04-02T14:21:09+02:00" />
   <description value="This Patient Resource is constrained for FGM Create Request messaging requirements. " />
+  <copyright value="Copyright © 2016 Health and Social Care Information Centre"/>
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />

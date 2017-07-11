@@ -28,6 +28,7 @@
 	</contact>
   <date value="2015-04-02T14:21:09+02:00" />
   <description value="This Parameters Resource is constrained for FGM Delete Request messaging requirements. " />
+  <copyright value="Copyright © 2016 Health and Social Care Information Centre"/>
   <mapping>
     <identity value="v2" />
     <uri value="http://hl7.org/v2" />
