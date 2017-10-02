@@ -61,6 +61,9 @@ entries:
     - title: Spine Directory Service
       url: /integration_spine_directory_service.html
       output: web 
+    - title: NHS Local System Integration
+      url: /integration_nhs_local_system.html
+      output: web
     - title: Spine Mini Service
       url: /integration_spine_mini_service.html
       output: web 
