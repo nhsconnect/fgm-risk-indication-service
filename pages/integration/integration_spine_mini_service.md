@@ -28,7 +28,7 @@ The [IF FGM RIS Spine Mini Service – Provider Requirements] document is a spec
 Some of the requirements in this document will be assured using the Common Assurance Process and some will be assured using the Interoperability Framework Accreditation process..
 
 
-[IF FGM RIS Spine Mini Service – Client Requirements]: images/fgm/IF_Spine_Mini_Service_FGM_RIS_Client_Requirements_1.0.pdf
+[IF FGM RIS Spine Mini Service – Client Requirements]: images/fgm/IF_Spine_Mini_Service_FGM_RIS_Client_Requirements_2.0.pdf
 
 [IF FGM RIS Spine Mini Service – Provider Requirements]: images/fgm/IF_Spine_Mini_Service_FGM_RIS_Provider_Requirements_1.0.pdf
 
