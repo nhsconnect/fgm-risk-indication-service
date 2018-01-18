@@ -112,7 +112,7 @@ repository: nhsconnect/fgm-risk-indication-service
 gist:
   noscript: false
 
-gems:
+plugins:
    - jekyll-github-metadata
    - jekyll-mentions
    - jemoji
