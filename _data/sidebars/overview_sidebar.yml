@@ -64,7 +64,7 @@ entries:
     - title: NHS Local System Integration
       url: /integration_nhs_local_system.html
       output: web
-    - title: Spine Mini Service
+    - title: IF Spine Mini Services
       url: /integration_spine_mini_service.html
       output: web 
   - title: Tags
