@@ -1,10 +1,10 @@
 ---
-title: FGM Query v2
-keywords: development fgm query v2
+title: FGM Query
+keywords: development fgm query
 tags: [development]
 sidebar: overview_sidebar
-permalink: development_fgm_query_v2.html
-summary: "FGM Query/ Response v2 FHIR Messaging API."
+permalink: development_fgm_query.html
+summary: "FGM Query/ Response FHIR Messaging API."
 ---
 
 
@@ -33,7 +33,7 @@ All FGM Create Flag connections to the FGM Service should include the below HTTP
 
 ## FGM Query ##
 
-### FGM Query Request v2 ###
+### FGM Query Request ###
 
 
 For all Spine 2 FGM connections the FGM Query request payload MUST include these FGM FHIR profiles:
@@ -77,16 +77,20 @@ POST /fhir/fgm/query HTTP/1.1
 
 ### FGM Query Request ###
 
-```xml
+<div style="border:solid 1px; border-color: #c3c8cc;">
+
+<pre>
 POST /fhir/fgm/query HTTP/1.1
 Host: msg.int.spine2.ncrs.nhs.uk
 SOAPAction: "urn:nhs:names:services:clinicals-sync/FGMQuery_2_0"
 Content-Length: 3305
 Content-Type: text/xml; charset=utf-8
 Connection: close
-<?xml version="1.0" encoding="UTF-8"?><Bundle><id value="13daadee-26e1-4d6a-9e6a-7f4af9b58870"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-message-bundle-1-0"/></meta><type value="message"/><entry><resource><MessageHeader><id value="14daadee-26e1-4d6a-9e6a-7f4af9b58870"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-request-messageheader-2-0"/></meta><timestamp value="2015-07-04T09:10:13+00:00"/><event><system value="http://fhir.nhs.net/ValueSet/message-event-2-0"/><code value="urn:nhs:names:services:clinicals-sync:FGMQuery_2_0"/></event><source><name value="Standon NHS Trust"/><software value="Standon Patient Manager"/><contact><system value="phone"/><value value="0207 333777"/></contact><endpoint value="urn:nhs:addressing:asid:047192794540"/></source><destination><name value="SPINE"/><endpoint value="urn:nhs:addressing:asid:990101234567"/></destination><author><reference value="Practitioner/41fe704c-18e5-11e5-b60b-1697f925ec7b"/><display value="Dr Town Wood"/></author><data><reference value="Parameters/7cb73a48-090d-469a-a2b2-04f1e6b11ea1"/></data></MessageHeader></resource></entry><entry><resource><Parameters><id value="7cb73a48-090d-469a-a2b2-04f1e6b11ea1"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-ris-parameters-1-0"/></meta><parameter><name value="RiskIndicator"/><valueString value="FGM"/></parameter><parameter><name value="NHSNumber"/><valueString value="9999999999"/></parameter></Parameters></resource></entry><entry><resource><Practitioner><id value="41fe704c-18e5-11e5-b60b-1697f925ec7b"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-practitioner-2-0"/></meta><identifier><system value="http://fhir.nhs.net/Id/local-identifier"/><value value="12456"/></identifier><practitionerRole><managingOrganization><reference value="Organization/99daadee-26e1-4d6a-9e6a-7f4af9b99999"/></managingOrganization></practitionerRole></Practitioner></resource></entry><entry><resource><Organization xmlns="http://hl7.org/fhir"><id value="99daadee-26e1-4d6a-9e6a-7f4af9b99999"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-organization-1-0"/></meta><identifier><system value="http://fhir.nhs.net/Id/ods-organization-code"/><value value="SDT"/></identifier><name value="Standon NHS Trust "/></Organization></resource></entry></Bundle>
-```
+</pre>
 
+<script src="https://gist.github.com/sufyanpat/bf3a1b03d2ae99b446a3b12fc6e37ab5.js"></script>
+
+</div>
 - Additional examples are available here - [XML](http://data.developer.nhs.uk/fhir/fgm-v2-draft-d/Chapter.5.Examples/examples.html)
 
 
@@ -106,15 +110,20 @@ Spine 2 will return:
 <!-- - Where an Observation is returned, it SHALL include the `versionId` and `fullUrl` of the current version of the `observation` resource. -->
 
 
-```xml
+<div style="border:solid 1px; border-color: #c3c8cc;">
+
+<pre>
 HTTP/1.1 200 OK
 Server: nginx/1.10.1
 Date: Fri, 06 Jan 2017 09:17:00 GMT
 Content-Type: application/xml+fhir;charset=utf-8
 Content-Length: 948
 Connection: close
-<?xml version="1.0" encoding="UTF-8"?><Bundle><id value="13daadee-26e1-4d6a-9e6a-7f4af9b58878"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-message-bundle-1-0"/></meta><type value="message"/><entry><resource><MessageHeader><id value="14daadee-26e1-4d6a-9e6a-7f4af9b58879"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-response-messageheader-2-0"/></meta><timestamp value="2015-07-04T10:10:15+00:00"/><event><system value="http://fhir.nhs.net/ValueSet/message-event-2-0"/><code value="urn:nhs:names:services:clinicals-sync:FGMQueryResponse_2_0"/></event><response><identifier value="14daadee-26e1-4d6a-9e6a-7f4af9b58877"/><code value="ok"/></response><source><name value="SPINE"/><endpoint value="urn:nhs:addressing:asid:990101234567"/></source><destination><name value="FooBar NHS Trust"/><endpoint value="urn:nhs:addressing:asid:047192794544"/></destination><data><reference value="Flag/8cb73a48-090d-469a-a2b2-04f1e6b11ea2"/></data></MessageHeader></resource></entry><entry><resource><Flag><id value="8cb73a48-090d-469a-a2b2-04f1e6b11ea2"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-ris-flag-1-0"/></meta><contained><Patient><id value="20daadee-26e1-4d6a-9e6a-7f4af9b58877"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-ris-patient-1-0"/></meta><identifier><system value="http://fhir.nhs.net/Id/nhs-number"/><value value="1234567890"/></identifier></Patient></contained><status value="active"/><period><start value="2015-02-04"/></period><subject><reference value="#20daadee-26e1-4d6a-9e6a-7f4af9b58877"/></subject><code><coding><system value="http://fhir.nhs.net/ValueSet/risk-indicator-type-1-0"/><code value="FGM"/></coding></code></Flag></resource></entry></Bundle>
-```
+</pre>
+
+<script src="https://gist.github.com/sufyanpat/a3deefdd707562ed27889172fb74e80c.js"></script>
+</div>
+
 OR the Query Response Message:
 
 - SHALL return a `404` **Not Found** HTTP status code on successful execution of the interaction, however no FGM flag record has been found.
@@ -156,17 +165,20 @@ Failure:
 
 If the NHS number being requested in the search request is invalid the Spine 2 will return:
 
+<div style="border:solid 1px; border-color: #c3c8cc;">
 
-```xml
+<pre>
 HTTP/1.1 400 Bad Request
 Server: nginx/1.10.1
 Date: Fri, 06 Jan 2017 09:17:00 GMT
 Content-Type: application/xml+fhir;charset=utf-8
 Content-Length: 948
 Connection: close
-<?xml version='1.0' encoding='UTF-8'?><Bundle><id value="22daadee-26e1-4d6a-9e6a-7f4af9b58892"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-message-bundle-1-0"/></meta><type value="message"/><entry><resource><MessageHeader><id value="14daadee-26e1-4d6a-9e6a-7f4af9b58879"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-response-messageheader-2-0"/></meta><timestamp value="2015-07-04T10:10:15+00:00"/><event><system value="http://fhir.nhs.net/ValueSet/message-event-2-0"/><code value="urn:nhs:names:services:clinicals-sync:FGMQueryResponse_2_0"/></event><response><identifier value="14daadee-26e1-4d6a-9e6a-7f4af9b58877"/><code value="fatal-error"/></response><source><name value="SPINE"/><endpoint value="urn:nhs:addressing:asid:990101234567"/></source><destination><name value="FooBar NHS Trust"/><endpoint value="urn:nhs:addressing:asid:047192794544"/></destination></MessageHeader></resource></entry><entry><resource><OperationOutcome><id value="22daadee-26e1-4d6a-9e6a-7f4af9b58877"/><meta><profile value="http://fhir.nhs.net/StructureDefinition/spine-operationoutcome-1-0"/></meta><issue><severity value="error"/><code value="invalid"/><details><coding><system value="http://fhir.nhs.net/ValueSet/spine-response-code-2-0"/><code value="INVALID_NHS_NUMBER"/><display value="Invalid NHS Number"/></coding></details></issue></OperationOutcome></resource></entry></Bundle>
+</pre>
 
-```
+<script src="https://gist.github.com/sufyanpat/a7bf61ab6994ad9ef3a8712274e1ade4.js"></script>
+
+</div>
 
 - Additional examples are available here - [XML](http://data.developer.nhs.uk/fhir/fgm-v2-draft-d/Chapter.5.Examples/examples.html) 
 

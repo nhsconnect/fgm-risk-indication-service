@@ -11,7 +11,7 @@ summary: "FGM Service Development Assets."
 
 [TODO: Insert a picture here to show the overall process AND update profiles]
 
-## FGM RIS Query Request Profiles v1 ##
+<!-- ## FGM RIS Query Request Profiles v1 ##
 
 FGM RIS Query Request v1:
 
@@ -35,10 +35,10 @@ FGM RIS Query Request Response v1:
 | [Spine-OperationOutcome-1-0](http://data.developer.nhs.uk/fhir/fgm/Profile.FGMRISQueryRequestResponse/spine-operationoutcome-1-0.html) | TBA | [spine-response-code-1-0](https://fhir.nhs.uk/ValueSet/spine-response-code-1-0) | TBA |
 | [Spine-RIS-Patient-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-patient-1-0) | TBA | | TBA |
 
+-->
+## FGM RIS Query Request Profiles ##
 
-## FGM RIS Query Request Profiles v2 ##
-
-FGM RIS Query Request v2:
+FGM RIS Query Request:
 
 | Profile| Example | ValueSets | Sample Code |
 | :--------- | :-----: |:-----: |:-----: |
@@ -50,7 +50,7 @@ FGM RIS Query Request v2:
 
 
 
-FGM RIS Query Request Response v2:
+FGM RIS Query Request Response:
 
 | Profile| Example | ValueSets | Sample Code |
 | :--------- | :-----: |:-----: |:-----: |
