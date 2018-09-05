@@ -99,10 +99,9 @@ Connection: close
 Success:
 
 - SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
-- SHALL return a `Bundle` of `type` message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
-- SHALL return a MessageHeader resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile, containing either:
-  - One matching `Flag` resource that conforms to the [spine-ris-flag-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-flag-1-0) profile; 
-  - The `Flag` resource SHALL contain a patient resource that conforms to the [spine-ris-patient-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-patient-1-0) profile;
+- SHALL return a `Bundle` of type message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile.
+- SHALL return a `MessageHeader` resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
+- SHALL return a `Flag` resource that conforms to the [spine-ris-flag-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-flag-1-0) profile. This includes the [spine-ris-patient-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-patient-1-0) profile as a contained resource.
 
 Spine 2 will return:
  
@@ -159,7 +158,7 @@ Failure:
 
 
 
-- The error codes are defined in the [spine-response-code-2-0](/ValueSets/spine-response-code-2-0.xml) ValueSet.
+- The error codes are defined in the [spine-response-code-2-0](https://fhir.nhs.uk/ValueSet/spine-response-code-2-0) ValueSet.
 - Error INVALID_NHS_NUMBER would occur if the NHS number being requested in the search request is invalid.
 - Error ASID_CHECK_FAILED comes from the old SOAP error for Access Denied with is already used throughout Spine when the endpoint lookup fails.
 

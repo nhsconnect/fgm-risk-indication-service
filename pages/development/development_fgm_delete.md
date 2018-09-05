@@ -37,13 +37,13 @@ All Create connections to the FGM Service should include the below HTTP request 
 
 For all FGM Delete request interactions the payload MUST include these FGM FHIR profiles:
 
-- Bundle resource that conforms to the `spine-message-bundle-1-0` profile;
-- MessageHeader resource that conforms to the `spine-Request-messageheader-2-0` profile;
-- Parameters resource that conforms to the `spine-fgmdelete-parameters-1-0` profile;
+- Bundle resource that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
+- MessageHeader resource that conforms to the [spine-Request-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) profile;
+- Parameters resource that conforms to the [spine-fgmdelete-parameters-1-0](https://fhir.nhs.uk/StructureDefinition/spine-fgmdelete-parameters-1-0) profile;
 
 The FGM Delete request payload MAY include the FGM FHIR profile:
 
-- Organization resource that conforms to the `spine-organization-1-0` profile;
+- Organization resource that conforms to the [spine-organization-1-0](https://fhir.nhs.uk/StructureDefinition/spine-organization-1-0) profile;
 
 
 ### FGM Delete Request ###
@@ -69,8 +69,8 @@ Connection: close
 Success:
 
 - SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
-- SHALL return a `Bundle` of `type` message that conforms to the `spine-message-bundle-1-0` profile;
-- SHALL return a MessageHeader resource that conforms to the `spine-Response-messageheader-2-0` profile.
+- SHALL return a `Bundle` of `type` message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
+- SHALL return a MessageHeader resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
 
 <div style="border:solid 1px; border-color: #c3c8cc;">
 
@@ -89,7 +89,7 @@ Connection: close
 
 Failure: 
 
-- SHALL return one of the below HTTP status error codes with an `OperationOutcome` resource that conforms to the `spine-operationoutcome-1` profile if the create flag cannot be executed.
+- SHALL return one of the below HTTP status error codes with an `OperationOutcome` resource that conforms to the [spine-operationoutcome-1](https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1) profile if the create flag cannot be executed.
 - The below table summarises the types of error that could occur, and the HTTP response codes, along with the values to expect in the `OperationOutcome` response body.
 
 
@@ -103,7 +103,7 @@ Failure:
 |400 | error | structure | MESSAGE_NOT_WELL_FORMED | Message not well formed | FGM-9999 |
 |403 | error | forbidden | ASID_CHECK_FAILED | The sender or receiver's ASID is not authorised for this interaction | 300 |
 
-- The error codes are defined in the [spine-response-code-2-0](/ValueSets/spine-response-code-2-0.xml) ValueSet.
+- The error codes are defined in the [spine-response-code-2-0](https://fhir.nhs.uk/ValueSet/spine-response-code-2-0) ValueSet.
 - Error INVALID_NHS_NUMBER would occur if the NHS number being requested in the search request is invalid.
 - Error ASID_CHECK_FAILED comes from the old SOAP error for Access Denied with is already used throughout Spine when the endpoint lookup fails.
 
