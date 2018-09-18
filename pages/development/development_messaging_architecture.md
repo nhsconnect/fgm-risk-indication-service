@@ -35,7 +35,7 @@ contains the required sender and receiver endpoint information there is no longe
 The FGM request / response FHIR message payloads consist of combined FHIR resources that are bundled together within a FHIR Bundle wrapper to form the FHIR message structure. The Bundle resource is a container for a collection of resources identified by the type "message", with the first 
 resource in the bundle being a MessageHeader resource.
 
-The MessageHeader resource has a message event code (MessageHeader.event.code) that identifies the nature of the request/ response message. The message event in FGM is the SOAPAction (service and action) URI once carried as an HTTP Header e.g. urn:nhs:names:services:clinicals-sync:FGMQuery_1_0
+The MessageHeader resource has a message event code (MessageHeader.event.code) that identifies the nature of the request/ response message. The message event in FGM is the SOAPAction (service and action) URI once carried as an HTTP Header e.g. urn:nhs:names:services:clinicals-sync:FGMQuery_2_0
 
 The MessageHeader.source.endpoint and  the MessageHeader.destination.endpoint elements identify the sender and receiver addresses and are used for authorisation and audit purposes. An example of a sender address URN is: urn:nhs:addressing:asid:047192794544
 

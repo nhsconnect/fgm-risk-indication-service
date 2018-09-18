@@ -18,19 +18,6 @@ To use this FHIR Messaging API, the requester:
 
 
 
-<!-- ## HTTP Request Headers ##
-
-All FGM Create Flag connections to the FGM Service should include the below HTTP request headers:
-
-| Header               | Value |
-|----------------------|-------|
-| `Host:`        | msg.int.spine2.ncrs.nhs.uk |
-| `SOAPAction:`           | "urn:nhs:names:services:clinicals-sync/FGMQuery_2_0" |
-| `Content-Length`             | e.g. 3305|
-| `Content-Type: `  | `application/xml+fhir; charset=utf-8`|
-| `Connection:`      | e.g. close | -->
-
-
 ## FGM Query ##
 
 ### FGM Query Request ###
@@ -82,7 +69,7 @@ POST /fhir/fgm/query HTTP/1.1
 <pre>
 POST /fhir/fgm/query HTTP/1.1
 Host: msg.int.spine2.ncrs.nhs.uk
-SOAPAction: "urn:nhs:names:services:clinicals-sync/FGMQuery_2_0"
+SOAPAction: "urn:nhs:names:services:clinicals-sync:FGMQuery_2_0"
 Content-Length: 3305
 Content-Type: text/xml; charset=utf-8
 Connection: close

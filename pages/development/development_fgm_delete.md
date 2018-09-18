@@ -17,20 +17,6 @@ To use this FHIR Messaging API, the requester:
 - SHALL have previously traced the patient's NHS Number using PDS or an equivalent service.
 
 
-<!-- ## HTTP Request Headers ##
-
-All Create connections to the FGM Service should include the below HTTP request headers:
-
-| Header               | Value |
-|----------------------|-------|
-| `Host:`        | msg.int.spine2.ncrs.nhs.uk |
-| `SOAPAction:`           | "urn:nhs:names:services:clinicals-sync/FGMCreate_1_0" |
-| `Content-Length`             | e.g. 3305|
-| `Content-Type: `  | `application/xml+fhir; charset=utf-8`|
-| `Connection:`      | e.g. close |
- -->
-
-
 ## FGM Delete ##
 
 ### FGM Delete Request ###
@@ -53,7 +39,7 @@ The FGM Delete request payload MAY include the FGM FHIR profile:
 <pre>
 POST /fhir/fgm/query HTTP/1.1
 Host: msg.int.spine2.ncrs.nhs.uk
-SOAPAction: "urn:nhs:names:services:clinicals-sync/FGMDelete_1_0"
+SOAPAction: "urn:nhs:names:services:clinicals-sync:FGMDelete_1_0"
 Content-Length: 3305
 Content-Type: text/xml; charset=utf-8
 Connection: close
