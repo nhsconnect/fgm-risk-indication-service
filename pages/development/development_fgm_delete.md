@@ -37,7 +37,7 @@ The FGM Delete request payload MAY include the FGM FHIR profile:
 <div style="border:solid 1px; border-color: #c3c8cc;">
 
 <pre>
-POST /fhir/fgm/query HTTP/1.1
+POST /fhir/fgm/delete HTTP/1.1
 Host: msg.int.spine2.ncrs.nhs.uk
 SOAPAction: "urn:nhs:names:services:clinicals-sync:FGMDelete_1_0"
 Content-Length: 3305
