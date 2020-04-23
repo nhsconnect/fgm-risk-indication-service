@@ -38,7 +38,7 @@ The FGM System provides the ability to display an alert message when a patient w
 
 The FGM-IS Service supports the wider Female Genital Mutilation Prevention (FGMP) Programme which is in place to protect, prevent and care for girls and vulnerable women who have a family history of FGM. This service will allow Healthcare professionals and other government organisations (with an appropriate relationship), to flag girls and vulnerable women who are at risk of FGM. This information will be available in the following settings: Spine 2, GP systems, Child Health Systems and other government agencies.
 
-Find out more on the NHS Digital [Female Genital Mutilation - Information Sharing](http://content.digital.nhs.uk/fgmris) homepage.
+Find out more on the NHS Digital [Female Genital Mutilation - Information Sharing](https://digital.nhs.uk/services/female-genital-mutilation-information-sharing) homepage.
 
 
 
