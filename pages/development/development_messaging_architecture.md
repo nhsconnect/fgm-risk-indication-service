@@ -7,9 +7,9 @@ permalink: development_messaging_architecture.html
 summary: "FGM Service Messaging API."
 ---
 
-## FGM RIS Spine 2 interface Overview ##
+## FGM-IS Spine 2 Interface Overview ##
 
-This section provides FGM implementers with an overview of the FGM Risk Indication System Spine 2 FHIR messaging interface also known as the 'FGM Service'.  
+This section provides FGM implementers with an overview of the FGM Information Sharing System Spine 2 FHIR messaging interface also known as the 'FGM Service'.  
 
 The FGM Service supports the following functionality:
 
@@ -84,8 +84,8 @@ Assuming successful transport of the FGM-QueryRequest-2-0 message, Spine 2 will 
 There are three possible outcomes to the Query Request:
 
 - **Invalid Query:** SPINE rejects the FGM query due to business rules around the query construct.
-- **FGM Entry Found:** SPINE executes the FGM query and there is an FGM risk entry for the patient.
-- **No FGM Entry Found:** SPINE executes the FGM query and there is no FGM risk entry for the patient.
+- **FGM Entry Found:** SPINE executes the FGM query and there is an FGM-IS entry for the patient.
+- **No FGM Entry Found:** SPINE executes the FGM query and there is no FGM-IS entry for the patient.
 
 
 ## QRY-FGM-QueryRequest-2-0 Interaction ## 
@@ -132,8 +132,8 @@ Assuming successful transport of the FGM-QueryRequest-2-0 message, Spine 2 will 
 There are three possible outcomes to the Query Request:
 
 - **Invalid Query:** SPINE rejects the FGM query due to business rules around the query construct.
-- **FGM Entry Found:** SPINE executes the FGM query and there is an FGM risk entry for the patient.
-- **No FGM Entry Found:** SPINE executes the FGM query and there is no FGM risk entry for the patient.
+- **FGM Entry Found:** SPINE executes the FGM query and there is an FGM-IS entry for the patient.
+- **No FGM Entry Found:** SPINE executes the FGM query and there is no FGM-IS entry for the patient.
 
 
 
@@ -168,7 +168,7 @@ Assuming successful transport of the FGM-CreateFlagRequest-1-0 message, Spine 2 
 
 There are two possible outcomes to the FGM-CreateFlagRequest-1-0:
 
-- **FGM Create:** SPINE executes the FGM create flag request and an FGM risk entry for the patient is created on Spine 2.
+- **FGM Create:** SPINE executes the FGM create flag request and an FGM-IS entry for the patient is created on Spine 2.
 - **Invalid Create Request:** SPINE rejects the FGM create flag request due to business rules around the create flag construct.
 
 
@@ -205,7 +205,7 @@ Assuming successful transport of the FGM-CreateFlagRequest-1-0 message, Spine 2 
 
 There are two possible outcomes to the FGM-DeleteRequest-1-0:
 
-- **FGM Delete:** SPINE executes the FGM delete request and the FGM risk entry for the patient is removed from Spine 2.
+- **FGM Delete:** SPINE executes the FGM delete request and the FGM-IS entry for the patient is removed from Spine 2.
 - **Invalid Delete Request:** SPINE rejects the FGM delete request due to business rules around the delete message construct.
 
 
@@ -215,7 +215,7 @@ There are two possible outcomes to the FGM-DeleteRequest-1-0:
 ## FGM Risk Indication System Spine 2 Interaction Diagram ##
 
 
-The diagram shows the FGM Risk Indication System Spine 2 Interactions:
+The diagram shows the FGM Information Sharing System Spine 2 Interactions:
 
 <!-- </br>
 
