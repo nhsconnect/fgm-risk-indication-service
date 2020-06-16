@@ -28,8 +28,9 @@ Assuming successful transport, there are three possible outcomes:
 
 This activity diagram below illustrates interactive FGM-IS Query and Response functionality.
 
-![stuff](images/fgm/FGMQueryResponseActivityDiagramv0.2.png)
+![stuff](images/fgm/FGM Activity Diagram_CapabilitiesPage.png)
 
+<a href="images/fgm/FGM Activity Diagram_CapabilitiesPage.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in a new window</b></a>
 
 # FGM Update Capability #
 
