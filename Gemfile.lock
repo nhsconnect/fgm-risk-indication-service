@@ -222,10 +222,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 170)
   jekyll
   jekyll-mentions
   nokogiri
 
 BUNDLED WITH
-   1.16.1
+   2.0.2
