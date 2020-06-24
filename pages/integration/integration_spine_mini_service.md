@@ -9,7 +9,7 @@ summary: "Overview of the role of Interoperability Framework Spine Mini Services
 
 ## Interoperability Framework Spine Mini Services ##
 
-The common [IF Spine Mini Service Client](images/fgm/IF_Spine_Mini_Service_Common_Client_Requirements_1.0.pdf) and [IF Spine Mini Service Provider (SMSP)](images/fgm/IF_Spine_Mini_Service_Common_Provider_requirements_1.0.pdf) requirements have been uplifted to accommodate the FHIR&reg; DSTU2 1.0.2 Standard within the FGM Service. 
+The common [IF Spine Mini Service Client](images/fgm/IF Spine Mini Service FGM IS Client Requirements v2.0.1.pdf) and [IF Spine Mini Service Provider (SMSP)](images/fgm/IF Spine Mini Service FGM IS Provider Requirements 1.0.1.pdf) requirements have been uplifted to accommodate the FHIR&reg; DSTU2 1.0.2 Standard within the FGM Service. 
 
 ## Interoperability Framework FGM-IS Spine Mini Service – Client Requirements ##
 
@@ -42,8 +42,8 @@ The TOM is typically used in two phases:
 For a brief introduction to getting started with Spine Mini Services APIs, go to the [NHS Connect Spine Mini Service](https://nhsconnect.github.io/spine-smsp/index.html) homepage.
 
 
-[IF FGM RIS Spine Mini Service – Client Requirements]: images/fgm/IF_Spine_Mini_Service_FGM_RIS_Client_Requirements_2.0.pdf
+[IF FGM-IS Spine Mini Service – Client Requirements]: images/fgm/IF Spine Mini Service FGM IS Client Requirements v2.0.1.pdf
 
-[IF FGM RIS Spine Mini Service – Provider Requirements]: images/fgm/IF_Spine_Mini_Service_FGM_RIS_Provider_Requirements_1.0.pdf
+[IF FGM-IS Spine Mini Service – Provider Requirements]: images/fgm/IF Spine Mini Service FGM IS Provider Requirements 1.0.1.pdf
 
 

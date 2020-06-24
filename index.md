@@ -25,7 +25,7 @@ The system was delivered in two stages:
 
 **Stage 2: Delivery of ‘Integration Capabilities’ -** to make information held within the Core Service more widely available to healthcare staff by allowing integration of:
 
- - A ‘view only’ capability within local NHS systems and Spine Mini Service Providers (SMSP). This will allow fully integrated query and response access to national FGM information sharing from local NHS systems and SMSP's. 
+ - A ‘view only’ capability within local NHS systems and Spine Mini Service Providers (SMSP). This will allow fully integrated query and response access to national FGM information sharing system from local NHS systems and SMSP's. 
  - An ‘update’ capability within local NHS systems. Enabling additional create and delete capability for local NHS systems integration to the FGM-IS. This functionality is only applicable to local NHS IT systems that are Spine compliant and use National Role Based Access Control (RBAC). The FGM-IS can only be updated by authorised healthcare professionals using Smartcards with the correct RBAC activity codes. 
 
 

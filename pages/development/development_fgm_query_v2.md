@@ -26,7 +26,7 @@ To use this FHIR Messaging API, the requester:
 For all Spine 2 FGM connections the FGM Query request payload MUST include these FGM FHIR profiles:
 
 - Bundle resource that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
-- MessageHeader resource that conforms to the [spine-Request-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) profile;
+- MessageHeader resource that conforms to the [spine-request-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) profile;
 - Parameters resource that conforms to the [spine-ris-parameters-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-parameters-1-0) profile;
 - Practitioner resource that conforms to the [spine-practitioner-2-0](https://fhir.nhs.uk/StructureDefinition/spine-practitioner-2-0) profile;
 
@@ -39,7 +39,7 @@ The FGM Query request payload MAY include the FGM FHIR profile:
 For all SMSP connections The FGM Query request payload MUST include these FGM FHIR profiles:
 
 - Bundle resource that conforms to the `spine-message-bundle-1-0` profile;
-- MessageHeader resource that conforms to the `spine-Request-messageheader-1-0` profile;
+- MessageHeader resource that conforms to the `spine-request-messageheader-1-0` profile;
 - Parameters resource that conforms to the `spine-ris-parameters-1-0` profile;
 
 The SMSP FGM Query request payload MAY include the FGM FHIR profile:
@@ -87,7 +87,7 @@ Success:
 
 - SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
 - SHALL return a `Bundle` of type message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile.
-- SHALL return a `MessageHeader` resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
+- SHALL return a `MessageHeader` resource that conforms to the [spine-response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
 - SHALL return a `Flag` resource that conforms to the [spine-ris-flag-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-flag-1-0) profile. This includes the [spine-ris-patient-1-0](https://fhir.nhs.uk/StructureDefinition/spine-ris-patient-1-0) profile as a contained resource.
 
 Spine 2 will return:
@@ -114,7 +114,7 @@ OR the Query Response Message:
 
 - SHALL return a `404` **Not Found** HTTP status code on successful execution of the interaction, however no FGM flag record has been found.
 - SHALL return a `Bundle` of `type` message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
-- SHALL return a MessageHeader resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile, containing:
+- SHALL return a MessageHeader resource that conforms to the [spine-response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile, containing:
   - The `OperationOutcome` resource which MUST conform to the [spine-operationoutcome-1-0](https://fhir.nhs.uk/StructureDefinition/spine-operationoutcome-1-0) profile; 
 
 

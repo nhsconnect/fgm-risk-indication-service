@@ -24,7 +24,7 @@ To use this FHIR Messaging API, the requester:
 For all FGM Delete request interactions the payload MUST include these FGM FHIR profiles:
 
 - Bundle resource that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
-- MessageHeader resource that conforms to the [spine-Request-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) profile;
+- MessageHeader resource that conforms to the [spine-request-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-request-messageheader-2-0) profile;
 - Parameters resource that conforms to the [spine-fgmdelete-parameters-1-0](https://fhir.nhs.uk/StructureDefinition/spine-fgmdelete-parameters-1-0) profile;
 
 The FGM Delete request payload MAY include the FGM FHIR profile:
@@ -56,7 +56,7 @@ Success:
 
 - SHALL return a `200` **OK** HTTP status code on successful execution of the interaction.
 - SHALL return a `Bundle` of `type` message that conforms to the [spine-message-bundle-1-0](https://fhir.nhs.uk/StructureDefinition/spine-message-bundle-1-0) profile;
-- SHALL return a MessageHeader resource that conforms to the [spine-Response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
+- SHALL return a MessageHeader resource that conforms to the [spine-response-messageheader-2-0](https://fhir.nhs.uk/StructureDefinition/spine-response-messageheader-2-0) profile.
 
 <div style="border:solid 1px; border-color: #c3c8cc;">
 
