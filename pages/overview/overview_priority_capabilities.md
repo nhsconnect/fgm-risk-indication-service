@@ -24,7 +24,7 @@ Assuming successful transport, there are three possible outcomes:
 - SPINE executes the query and there is an FGM-IS entry for the patient
 - SPINE executes the query and there is no FGM-IS entry for the patient
 
-## FGM RIS Query and Response functionality ##
+## FGM IS Query and Response functionality ##
 
 This activity diagram below illustrates interactive FGM-IS Query and Response functionality.
 

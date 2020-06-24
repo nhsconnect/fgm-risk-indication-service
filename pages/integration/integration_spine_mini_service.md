@@ -42,8 +42,8 @@ The TOM is typically used in two phases:
 For a brief introduction to getting started with Spine Mini Services APIs, go to the [NHS Connect Spine Mini Service](https://nhsconnect.github.io/spine-smsp/index.html) homepage.
 
 
-[IF FGM-IS Spine Mini Service – Client Requirements]: (images/fgm/IF Spine Mini Service FGM IS Client Requirements v2.0.1.pdf)
+[IF FGM-IS Spine Mini Service – Client Requirements]: images/fgm/IF Spine Mini Service FGM IS Client Requirements v2.0.1.pdf
 
-[IF FGM-IS Spine Mini Service – Provider Requirements]: (images/fgm/IF Spine Mini Service FGM IS Provider Requirements 1.0.1.pdf)
+[IF FGM-IS Spine Mini Service – Provider Requirements]: images/fgm/IF Spine Mini Service FGM IS Provider Requirements 1.0.1.pdf
 
 
