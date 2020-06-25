@@ -7,6 +7,8 @@ permalink: development_messaging_architecture.html
 summary: "FGM Service Messaging API."
 ---
 
+{% include important.html content="Please note that the **'update' capability** is not currently available for those suppliers wishing to integrate FGM IS within their product offering. This will be kept under review by the NHS. Currently, the only functionality to be integrated into supplier systems is the **'view only' capability**." %}
+
 ## FGM-IS Spine 2 Interface Overview ##
 
 This section provides FGM implementers with an overview of the FGM Information Sharing System Spine 2 FHIR messaging interface also known as the 'FGM Service'.  

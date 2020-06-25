@@ -33,6 +33,7 @@ This activity diagram below illustrates interactive FGM-IS Query and Response fu
 <a href="images/fgm/FGM Activity Diagram_CapabilitiesPage.png" target="_blank" style="width: 100%;max-width: 100%;"><b>Click to open in a new window</b></a>
 
 # FGM Update Capability #
+{% include important.html content="Please note that the **'update' capability** is not currently available for those suppliers wishing to integrate FGM IS within their product offering. This will be kept under review by the NHS. Currently, the only functionality to be integrated into supplier systems is the **'view only' capability**." %}
 
 An ‘update’ capability within local NHS systems. Enabling additional create and delete capability for local NHS systems integration to the FGM-IS.
 

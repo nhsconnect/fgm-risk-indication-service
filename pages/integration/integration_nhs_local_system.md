@@ -8,6 +8,7 @@ permalink: integration_nhs_local_system.html
 summary: A brief introduction to the FGM-IS local system integration requirements.
 ---
 
+{% include important.html content="Please note that the **'update' capability** is not currently available for those suppliers wishing to integrate FGM IS within their product offering. This will be kept under review by the NHS. Currently, the only functionality to be integrated into supplier systems is the **'view only' capability**." %}
 
 # FGM-IS Local System Integration Requirements #
 
