@@ -7,6 +7,8 @@ permalink: development_fgm_create.html
 summary: "FGM Create Flag/ Response FHIR Messaging API."
 ---
 
+{% include important.html content="Please note that the **'update' capability** is not currently available for those suppliers wishing to integrate FGM IS within their product offering. This will be kept under review by the NHS. Currently, the only functionality to be integrated into supplier systems is the **'view only' capability**." %}
+
 ## Prerequisites ##
 
 To use this FHIR Messaging API, the requester:
