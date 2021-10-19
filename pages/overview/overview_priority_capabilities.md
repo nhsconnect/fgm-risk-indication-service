@@ -41,24 +41,24 @@ This functionality is only applicable to local NHS IT systems that are Spine com
 
 
 
-## Create patient FGM flag
+## Create patient FGM indicator
 
-The FGM-IS client will construct a FHIR create FGM-IS flag message and send it to the SPINE
-
-Assuming successful transport, there are two possible outcomes:
-
-- SPINE rejects the create flag request due to business rules around the message construct
-- SPINE executes the create flag request and there is an FGM-IS risk entry created for the patient on Spine
-
-
-## Delete patient FGM flag
-
-The FGM-IS client will construct a FHIR delete FGM-IS flag request message and send it to the SPINE
+The FGM-IS client will construct a FHIR create FGM-IS indicator message and send it to the SPINE
 
 Assuming successful transport, there are two possible outcomes:
 
-- SPINE rejects the delete flag request due to business rules around the message construct
-- SPINE executes the delete flag request and the FGM-IS entry is deleted for the patient on Spine
+- SPINE rejects the create indicator request due to business rules around the message construct
+- SPINE executes the create indicator request and there is an FGM-IS risk entry created for the patient on Spine
+
+
+## Delete patient FGM indicator
+
+The FGM-IS client will construct a FHIR delete FGM-IS indicator request message and send it to the SPINE
+
+Assuming successful transport, there are two possible outcomes:
+
+- SPINE rejects the delete indicator request due to business rules around the message construct
+- SPINE executes the delete indicator request and the FGM-IS entry is deleted for the patient on Spine
 
 
 
