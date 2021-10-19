@@ -35,7 +35,7 @@ The system was delivered in two stages:
 
 The FGM System provides the ability to display an alert message when a patient with female genitalia under 18 years old has a family history of FGM, as recorded in the FGM-IS service.
 
-The FGM-IS Service supports the wider Female Genital Mutilation Prevention (FGMP) Programme which is in place to protect, prevent and care for children and vulnerable adults who have a family history of FGM. This service will allow Healthcare professionals and other government organisations (with an appropriate relationship), to flag children and vulnerable adults who are at risk of FGM. This information will be available in the following settings: Spine 2, GP systems, Child Health Systems and other government agencies.
+The FGM-IS Service supports the wider Female Genital Mutilation Prevention (FGMP) Programme which is in place to protect, prevent and care for children and vulnerable adults who have a family history of FGM. This service will allow Healthcare professionals and other government organisations (with an appropriate relationship), to indicate children and vulnerable adults who are at risk of FGM. This information will be available in the following settings: Spine 2, GP systems, Child Health Systems and other government agencies.
 
 Find out more on the NHS Digital [Female Genital Mutilation - Information Sharing](https://digital.nhs.uk/services/female-genital-mutilation-information-sharing) homepage.
 
