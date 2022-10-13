@@ -8,7 +8,7 @@ toc: false
 summary: A brief introduction to getting started with the FGM Information Sharing Service FHIR&reg; Messaging API.
 ---
 
-{% include important.html content="This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the FGM Service FHIR Messaging API. Some areas are being formulated and iterative updates to content will be added on a regular basis." %}
+{% include important.html content="This site is now deprecated by NHS Digital. Use the [v.2.1.1 site](https://developer.nhs.uk/apis/fgm-v2.1/index.html) instead." %}
 
 # Background to FGM Information Sharing System #
 
